@@ -41,7 +41,7 @@ export default class ItemsList extends Component {
     const isItemPropsFunction = (typeof itemProps === 'function');
 
     return (
-      <ul role="listbox" {...theme(`${sectionPrefix}items-list`, 'itemsList')}>
+      <ul role="listbox" aria-label="Make a selection" {...theme(`${sectionPrefix}items-list`, 'itemsList')}>
         {
           items.map((item, itemIndex) => {
             const isFirst = (itemIndex === 0);
